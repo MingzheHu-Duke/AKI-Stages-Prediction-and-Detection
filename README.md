@@ -20,9 +20,6 @@ A description of this public dataset is here: https://scikit-learn.org/stable/mo
 ## Usage (Important):  
 **Minimum Python Requirement:** 3.7.12 (best if python 3.8)  
 **Upgrade Your pip!** $pip install --upgrade pip  
-  
-Here is the video guide:  
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/XVJkmyreTvw/0.jpg)](http://www.youtube.com/watch?v=XVJkmyreTvw "Video Tutorial")
 
 To download and install this package, there are two ways:  
 <strike>**1. Install via PYPI:**</strike>  
@@ -33,21 +30,21 @@ pip install -e AKI_Prediction/
 
 Here are the functions in the package you may want to call:   
 **Import the Package:**  
-\>>import AKI_Prdiction 
+\>>import AKI_Prediction 
+  
+**Load the data:**  
+\>>from AKI_Prediction  import generate_data  
+\>>generate_data.run()
 
 **Run the base K means clustering model:**  
-python
+\>> from AKI_Prediction import run_clustering  
+\>> run_clustering([data_file_name.csv])  
+data_file_name should the the file you want to predict in your current working directory.  
+If you don't have the data please run the generation_data function first, the data file will show in your current working directory
 
-**Evaluate the pretrained model:**
-\>>from kmeans_Digits import evaluate_kmeans  
-\>>evaluate_kmeans.run_test()  
-This will evaluate the performance of our pretrained model on the test set
-
-**Predict new data:**  
-\>>from kmeans_Digits import predict  
-\>>predict.run_test(_data, _label)  
-This will do the prediction with our pretrained model. Notice that the _data and _label should be in the same structure  
-as the sklean digits data.  
+**Run the baseline classification model:**  
+\>> from AKI_Prediction import run_classification  
+\>> run_classification([data_file_name.csv])
 
 
 
