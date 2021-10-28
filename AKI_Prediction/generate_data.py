@@ -128,5 +128,5 @@ def save_file():
     savetxt("y_test.csv", y_test, delimiter=",")
     return
 
-if __name__ = main:
+if __name__ == "__main__":
     save_file()
