@@ -8,8 +8,8 @@ from setuptools import find_packages, setup
 
 
 # Package meta-data.
-NAME = 'AKI_prediction'
-DESCRIPTION = 'Train and deploy k means model.'
+NAME = 'AKI_Prediction'
+DESCRIPTION = 'AKI Prediction and Detection.'
 URL = 'https://github.com/MingzheHu-Duke/AKI-Stages-Prediction-and-Detection/'
 EMAIL = 'mingzhehu511@gmail.com'
 AUTHOR = 'Mingzhe Hu'
