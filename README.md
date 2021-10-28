@@ -13,9 +13,6 @@ Please read the Jupyter NoteBook file for a better understanding of the code.
 **If there are any missing support package:**   
 Please install them manually, in case I missed any in the requirements.txt  
 
-This is the package of k means clustering models generated with sklearn package on sklean digits dataset.  
-A description of this public dataset is here: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html  
-
 **Run Time**: 1.26  
 **Minumum Memory Requirements:**: 635 MB
 
