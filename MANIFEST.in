@@ -1,0 +1,15 @@
+include *.txt
+include *.md
+include *.cfg
+include *.sav
+recursive-include ./AKI_Prediction/*
+
+include AKI_Prediction/data/.*
+include AKI_Prediction/model/.*
+include AKI_Prediction/VERSION
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
