@@ -22,18 +22,20 @@ from sklearn.metrics import accuracy_score
 from importlib import resources
 from numpy import loadtxt
 
-filename = sys.argv[1]
+def run(filename = "X_test.csv"):
 
-X_test = loadtxt(filename, delimiter=",")
+  X_test = loadtxt(filename, delimiter=",")
 
-# Train Data Scaler
-test_scaler = preprocessing.StandardScaler().fit(X_test)
-# Fit
-X_test = test_scaler.transform(X_test)
+  # Train Data Scaler
+  test_scaler = preprocessing.StandardScaler().fit(X_test)
+  # Fit
+  X_test = test_scaler.transform(X_test)
 
 
-with resources.path("AKI_Predictions.models", "KMeans6.sav") as f_name:
-  clustering_model = pickle.load((open(f_name, 'rb')))
+  with resources.path("AKI_Predictions.models", "KMeans6.sav") as f_name:
+    clustering_model = pickle.load((open(f_name, 'rb')))
+  print(clustering_model.predict(X_test))
+  return
   
 if __name__ == "__main__":
-  clustering_model.predict(X_test)
+  run()
