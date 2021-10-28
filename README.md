@@ -1,4 +1,6 @@
-# Using Machine learning for Acute Kidney Injury Prediction and Early Detection
+# Using Machine learning for Acute Kidney Injury Prediction and Early Detection  
+
+Please read the jupyternote book file for a better understanding of the code.  
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  **V1.0**
 
