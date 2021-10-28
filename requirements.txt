@@ -8,3 +8,5 @@ scipy==1.7.1
 six==1.15.0
 threadpoolctl==2.2.0
 matplotlib==3.4.3
+keras
+tensorflow
